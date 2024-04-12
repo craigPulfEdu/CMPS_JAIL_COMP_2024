@@ -2,6 +2,7 @@
     <head>
         <link rel="stylesheet" href="./css/styles.css">
     </head>
+    <script src="./js/netIncome.js"></script>
     <body>
         <div class="container">
         <title>Guild to Financial Literacy</title>
@@ -24,11 +25,17 @@
         <h2>Here are some Financial Terms that we will be discussing</h2>
         <ul>
             <li>Debt</li>
-            <li>Credit</li>
-            <li>Credit Score</li>
+            <li>Budgeting</li>
+            <li>Credit & Credit Score</li>
             <li>Savings</li>
             <li>Investment</li>
         </ul>
+
+        <h3>Budgeting</h3>
+        <p>Budgeting is a calculated plan which you follow for a set amount of time. Personal Financial Budgeting involves
+            taking you income and setting allocated amount for each part of your life including necessary expenses, entertainment
+            expenses, personal expenses and investment and saving expenses. Budgeting is very useful for having personal finances in order.
+        </p>
 
         <h3>Debt</h3>
 
@@ -44,6 +51,8 @@
         agrees to pay back in installments. Open-credit is very similar to revolving credit, but the pay-back terms are more loosely defined
         then with revolving credit. Installment Credit which is when a lump sum of money is borrowed and paid backt to the lender by the borrower in fixed amounts.
         </p>
+    
+
         <h3>Credit Score</h3>
         <p>Credit Scores are used by financial firms to analyze how credit worthy somebody is based on different factors. The factors considered
             are as follows:
@@ -68,6 +77,7 @@
             fund so when something unexpected occurs you can pay for it without going into debt. Its also good practice to have a set amount
             put into savings weekly or monthly but this amount may vary based on your financial goals and situation.
         </p>
+
         <h3>Investment</h3>
         <p>
             Investment is a very important things that can put you ahead financially, but it requires commitment, education,
@@ -84,16 +94,101 @@
         <p>
             You may be intrigued by some investments because it promises a very high return, but the reality of most investmnet is that it
             takes a long time to see a noticable return on investment, and while high risk investment may be temping it can cause you to
-            loose a lot of money or even put you in a situation where you find yourself in debt
+            loose a lot of money or even put you in a situation where you find yourself in debt. Some individuals though have higher risk
+            tolerance and are okay with higher risk investments.
         </p>
             <li>Pay off Debt or Invest?</li>
         <p>
             It may be tricky to figure out if you should invest money or pay off debt, but it really just depends. If an employer is matching
             your investment in some type of investment account (usually a 401k) then you should 100% invest up until what they match, but after
             this it will be more beneficial to pay off any high interest debt like credit cards. If the interest rate on a loan then generally 
-            it is advisable 7% you may want to prioritize paying this off before investing. 
+            it is advisable that at a rate of 8-9%+ you may want to prioritize paying this off before investing as most investments won't
+            yield a higher return than this. 
+        </p>
+            <li>Do you know what you're doing?</li>
+        <p>
+            You might think that you can make a quick flip on some stocks or crypto currency, and this may be the case, but a lot of us don't
+            know what we are doing, and there is nothing wrong with this, but if you are unsure about what you are doing you should seek advice
+            from experts or even just online if you're looking for the less formal do-it-yourself route.
         </p>
         </ul>
+        <!--New Section-->
+        <h2>Understanding your financial situation</h2>
+        <p>
+            There are different factors which patter whenever you are assessing your current financial situation. One is income vs expenses which
+            if you are not somebody who makes a planned or written personal budget you may not know what your expeses look like and how much money
+            you make per monthly period on average.
+        </p>
+        <br>
+        <p>Heres what you should record</p>
+        <ul>
+            <li>Money Earned</li>
+            <li>Necessary expenses</li>
+            <li>Entertainment expenses</li>
+            <li>Saving & Investment Amounts</li>
+            <li>Deffered Expenses (done with lines of credit)</li>
+        </ul>
+        <p>As a college student you may not currently have income or any expenses which you incur now and if this is the case ignore this section for now</p>
+
+        <h1>Calculating Net Loss or Net Gain on your Budget </h1>
+        <p>If you know how much you make in a month and how much you spend a month then you can calculate if you are net positive or net negative each month</p>
+
+        <label for="income">Monthly Income</label>
+        <input type="text" id="revenue">
+
+        <label for="expenses">Monthly Expenses</label>
+        <input type="text" id="expenses">
+
+
+        <input type="button" onclick="calculateNetIncome()" value="Calculate">
+
+        <p id="result">Net Income</p>
+
+        <p id="insight"></p>
+
+        <h1>Understanding Loans</h1>
+
+        <p>Loans can be tricky and hard to understand how much you are really paying. Typically a loan will have a fixed monthly payment
+            for a period of time. A lower payment may be appealing, but often loan providers will use lower payments to get you to take
+            the loan out, but in the long run you end up paying more in interest.
+        </p>
+
+        <h3> Typical Loan Terms </h3>
+
+        <ul>
+            <li>Student Loans: 10 years</li>
+            <li>Auto Loans: 2 - 7 years</li>
+            <li>Personal Loans: 1 - 7 years</li>
+            <li>House Loans: 15 - 30 years</li>
+        </ul>
+        <p>Loans don't necessary have to be within these terms, but these are the typical amounts of time that these loans are provided. Loan providers
+            especially whenever discussing auto loans will take advantage of a consumers lack of financial knowledge to entertain the lower monthly payment
+            over a longer term in order to sell a car and get them to agree to loan terms.
+        </p>
+        <h3> Consequences of not paying loans </h3>
+
+        <p>Unfortunately complete non-payment of loans isn't really an option because it will come with a number of consequences</p>
+
+            <h3>Auto Loans</h3>
+            <p>Non-payment of auto loans typically leads to repossession of the car you are making payments on.</p>
+            <h3>Personal Loans</h3>
+            <p>Non-payment of a personal loan will hurt your creditscore more severly than non-payment of other forms of credit
+                and some personal loans require collateral which can be taken by a lender in cases of non-payment.
+            </p>
+            <h3>Home Loans</h3>
+            <p>Non-payment of home loans can lead to the property being foreclosed on which is simply whenever the bank repossesses
+                land due to non-payment of a mortgage
+            </p>
+            <h3>Student Loans</h3>
+            <p>Student Loans are the most interesting of the bunch. There is essentially no way for you to get rid of student loans without
+                you paying on them as legally there is no way to get rid of student loan debt through bankruptcy. Lack of payment on student loans
+                can eventually lead to tax returns being seized, paychecks being garnished directly from your paychecks and sent to the government. If
+                you are in a situation where making payments is rough there are federal programs that can lower your payment or defer it for a later date
+                without any later legal or severe financial consequences like wage garnishment.
+            </p>
+        <h1>Calculating How Much you will pay</h1>
+        <p>This Calculator can calculate the total amount which you will pay on a loan</p>
+
     </div>
     </body>
 </html>

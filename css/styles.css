@@ -14,3 +14,16 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.scrolling-part {
+    height: 100vh; /* Set the height of the scrolling part */
+    background-color: lightblue; /* Just for visualization */
+  }
+  
+  .fixed-part {
+    position: fixed; /* Fix the element to the viewport */
+    top: 100vh; /* Position it below the scrolling part */
+    width: 100%;
+    height: 100vh; /* Set its height to match the viewport */
+    background-color: lightgreen; /* Just for visualization */
+  }
