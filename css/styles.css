@@ -1,29 +1,150 @@
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    max-width: 800px;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.scrolling-part {
-    height: 100vh; /* Set the height of the scrolling part */
-    background-color: lightblue; /* Just for visualization */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.navbar {
+  background-color: #555;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #333;
+}
+
+.navbar a:hover {
+  background-color: #444;
+}
+
+/* Main content styles */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+h1, h2, h3, h4 {
+  color: #333;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+ul {
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="button"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+image {
+  width: 50%;
+  height: 50%;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/* Responsive design */
+@media screen and (min-width: 300px) {
+  main {
+    grid-template-columns: 1fr 1fr;
   }
-  
-  .fixed-part {
-    position: fixed; /* Fix the element to the viewport */
-    top: 100vh; /* Position it below the scrolling part */
-    width: 100%;
-    height: 100vh; /* Set its height to match the viewport */
-    background-color: lightgreen; /* Just for visualization */
-  }
+}
