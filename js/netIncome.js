@@ -13,7 +13,7 @@ function calculateNetIncome() {
         document.getElementById('insight').innerText = "Net Zero income indicates some financial responsibility, but there is room for improvement"
     }
     if (netIncome < 0) {
-        document.getElementById('insight').innerText = "Net Zero income indicates some financial responsibility, but there is room for improvement"
+        document.getElementById('insight').innerText = "Negative net income indicates that improvement is needed"
     }
 }
 
